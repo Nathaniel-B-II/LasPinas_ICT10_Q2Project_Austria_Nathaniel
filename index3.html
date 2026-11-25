@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 30px 18px;
+            background: #1d63f0;
+            color: #39404d;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .app {
+            width: min(750px, 100%);
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 4px;
+            background: #ffffff;
+            box-shadow: 0 12px 30px rgba(18, 56, 145, 0.2);
+        }
+
+        .site-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 12px;
+            background: #164fca;
+        }
+
+        .site-nav a {
+            padding: 8px 13px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 999px;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .site-nav a:hover,
+        .site-nav a[aria-current="page"] {
+            background: #ffffff;
+            color: #164fca;
+        }
+
+        header {
+            padding: 22px 20px 14px;
+            background: #1d63f0;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 22px;
+            padding: 24px;
+        }
+
+        .image-placeholder {
+            display: grid;
+            flex: 0 0 200px;
+            width: 200px;
+            height: 200px;
+            place-items: center;
+            border: 2px dashed #72b4ff;
+            border-radius: 50%;
+            background: #e9f1fb;
+            color: #39404d;
+            text-align: center;
+        }
+
+        .profile-image {
+            display: block;
+            flex: 0 0 200px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .paragraph-area {
+            flex: 1;
+            min-width: 240px;
+            min-height: 200px;
+            padding: 13px;
+            border: 1px solid #dfe4ea;
+            border-radius: 5px;
+            color: #39404d;
+            font: inherit;
+            line-height: 1.5;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <main class="app">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Non-Metal Elements</a>
+            <a href="index2.html">Anti-Kenzo Club</a>
+            <a href="index3.html" aria-current="page">Meet the Creator</a>
+        </nav>
+
+        <header>
+            <h1>Meet the Creator</h1>
+        </header>
+
+        <section class="content" aria-label="Image and paragraph area">
+            <img class="profile-image" src="https://storage.googleapis.com/oa_disk001/oblaspinas/69/student_files/384/profile_pictures/1754121661-2423.JPG?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&amp;Expires=1795612613&amp;Signature=ke%2FAiLsaQDoHrRplCbggmGTUfE8%2Fj2QTcqDc9s0zqDArtG%2FzkWqFJSykQT3sVq%2BMr75xtI5VUaRLos5JFMrm%2F3rf7wajRf17mF22sgF3urlrvk6bd69tCJSzAyNHgq4a7SiIX2S%2BEKaYsxDRBVY3cC1ng3Y3mSXoqX4xwGo8dm61v5GnzHgBSDZyGyxau43HEjQZf%2BUvtJfja%2Fl0bCNTY4srkQ65enF0791wcddOGPeWkPlSnbOrCNdo7ZpzIpOHqkwJpvvuX8jWUFlv1%2Fwv%2FwZgp0zWnMH6x5A3fG9GJpEs5ebFgBdOCtjMnKc2nOtmdzPBmWo6urTqz29IeWDgqg%3D%3D" alt="Nick Austria's profile picture">
+            <textarea class="paragraph-area" aria-label="Paragraph area">I am Nick Austria, I dream of becoming a successful professional golfer or president of the entire world. My hobbies include golf, video games, and going to the gym.  </textarea>
+        </section>
+    </main>
+</body>
+</html>
